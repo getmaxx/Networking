@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,128 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zuX-6F-7BM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="Pa6-DH-0Wj"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Pa6-DH-0Wj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Pa6-DH-0Wj"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FQU-98-QWv">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QRl-NL-iew">
+                                <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li4-FH-Woa">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="e6L-3I-S8n"/>
+                                    <constraint firstAttribute="width" secondItem="Li4-FH-Woa" secondAttribute="height" multiplier="104:69" id="eef-A2-UuE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="e6L-3I-S8n"/>
+                                        <exclude reference="eef-A2-UuE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="e6L-3I-S8n"/>
+                                        <include reference="eef-A2-UuE"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="QsB-JF-8qz">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QsB-JF-8qz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1MN-e0-O2A"/>
+                            <constraint firstItem="QRl-NL-iew" firstAttribute="leading" secondItem="zuX-6F-7BM" secondAttribute="leading" id="68q-hL-QGL"/>
+                            <constraint firstItem="QRl-NL-iew" firstAttribute="top" secondItem="Li4-FH-Woa" secondAttribute="bottom" constant="8" id="CwR-mt-pXS"/>
+                            <constraint firstItem="FQU-98-QWv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hoy-U8-dWq"/>
+                            <constraint firstItem="Li4-FH-Woa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PnR-Nv-7WH"/>
+                            <constraint firstItem="QRl-NL-iew" firstAttribute="top" secondItem="QsB-JF-8qz" secondAttribute="bottom" constant="32" id="Ys4-oH-UMF"/>
+                            <constraint firstItem="QRl-NL-iew" firstAttribute="trailing" secondItem="zuX-6F-7BM" secondAttribute="trailing" id="chR-jA-0mF"/>
+                            <constraint firstItem="FQU-98-QWv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cxN-mE-4wt"/>
+                            <constraint firstItem="zuX-6F-7BM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fJJ-Ef-lxZ"/>
+                            <constraint firstItem="zuX-6F-7BM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="g0Z-XU-5u4"/>
+                            <constraint firstItem="zuX-6F-7BM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pn4-HB-ieP"/>
+                            <constraint firstItem="zuX-6F-7BM" firstAttribute="top" secondItem="QRl-NL-iew" secondAttribute="bottom" constant="8" id="rdw-YX-NjA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zuX-6F-7BM"/>
+                                <exclude reference="FQU-98-QWv"/>
+                                <exclude reference="QRl-NL-iew"/>
+                                <exclude reference="Li4-FH-Woa"/>
+                                <exclude reference="QsB-JF-8qz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="68q-hL-QGL"/>
+                                <exclude reference="CwR-mt-pXS"/>
+                                <exclude reference="Ys4-oH-UMF"/>
+                                <exclude reference="chR-jA-0mF"/>
+                                <exclude reference="Hoy-U8-dWq"/>
+                                <exclude reference="cxN-mE-4wt"/>
+                                <exclude reference="1MN-e0-O2A"/>
+                                <exclude reference="PnR-Nv-7WH"/>
+                                <exclude reference="fJJ-Ef-lxZ"/>
+                                <exclude reference="g0Z-XU-5u4"/>
+                                <exclude reference="pn4-HB-ieP"/>
+                                <exclude reference="rdw-YX-NjA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zuX-6F-7BM"/>
+                                <include reference="FQU-98-QWv"/>
+                                <include reference="QRl-NL-iew"/>
+                                <include reference="Li4-FH-Woa"/>
+                                <include reference="QsB-JF-8qz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="68q-hL-QGL"/>
+                                <include reference="CwR-mt-pXS"/>
+                                <include reference="Ys4-oH-UMF"/>
+                                <include reference="chR-jA-0mF"/>
+                                <include reference="Hoy-U8-dWq"/>
+                                <include reference="cxN-mE-4wt"/>
+                                <include reference="1MN-e0-O2A"/>
+                                <include reference="PnR-Nv-7WH"/>
+                                <include reference="fJJ-Ef-lxZ"/>
+                                <include reference="g0Z-XU-5u4"/>
+                                <include reference="pn4-HB-ieP"/>
+                                <include reference="rdw-YX-NjA"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="activity" destination="FQU-98-QWv" id="eau-Kc-Mts"/>
+                        <outlet property="imgView" destination="zuX-6F-7BM" id="LLM-y6-uKJ"/>
+                        <outlet property="progress" destination="QRl-NL-iew" id="vG2-tr-J3b"/>
+                        <outlet property="tempActivity" destination="QsB-JF-8qz" id="7g9-HU-F74"/>
+                        <outlet property="weatherLabel" destination="Li4-FH-Woa" id="TpP-cR-Sbs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="439.5" y="429"/>
         </scene>
     </scenes>
 </document>
