@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2911DD881BB921B2009F502B /* IVPostSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 2911DD871BB921B2009F502B /* IVPostSender.m */; settings = {ASSET_TAGS = (); }; };
+		2938851A1BB935290062BF86 /* IVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 293885191BB935290062BF86 /* IVUser.m */; settings = {ASSET_TAGS = (); }; };
 		2962CDB11BB7001B0087D0D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2962CDB01BB7001B0087D0D9 /* main.m */; };
 		2962CDB41BB7001B0087D0D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2962CDB31BB7001B0087D0D9 /* AppDelegate.m */; };
 		2962CDB71BB7001B0087D0D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2962CDB61BB7001B0087D0D9 /* ViewController.m */; };
@@ -15,9 +17,15 @@
 		2962CDBF1BB7001B0087D0D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2962CDBD1BB7001B0087D0D9 /* LaunchScreen.storyboard */; };
 		2962CDC81BB718AC0087D0D9 /* IVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2962CDC71BB718AC0087D0D9 /* IVModel.m */; settings = {ASSET_TAGS = (); }; };
 		29D8A0D41BB7FDE10037A6D9 /* IVWeatherMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D8A0D31BB7FDE10037A6D9 /* IVWeatherMap.m */; settings = {ASSET_TAGS = (); }; };
+		E8BBF04ADCAE990B37DF1DC8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DA2D803D3CBB55804CC8B2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28DA2D803D3CBB55804CC8B2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2911DD861BB921B2009F502B /* IVPostSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVPostSender.h; sourceTree = "<group>"; };
+		2911DD871BB921B2009F502B /* IVPostSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVPostSender.m; sourceTree = "<group>"; };
+		293885181BB935290062BF86 /* IVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVUser.h; sourceTree = "<group>"; };
+		293885191BB935290062BF86 /* IVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVUser.m; sourceTree = "<group>"; };
 		2962CDAC1BB7001B0087D0D9 /* NSURLSessionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSURLSessionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2962CDB01BB7001B0087D0D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2962CDB21BB7001B0087D0D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +40,8 @@
 		2962CDC71BB718AC0087D0D9 /* IVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IVModel.m; path = ../IVModel.m; sourceTree = "<group>"; };
 		29D8A0D21BB7FDE10037A6D9 /* IVWeatherMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IVWeatherMap.h; path = ../IVWeatherMap.h; sourceTree = "<group>"; };
 		29D8A0D31BB7FDE10037A6D9 /* IVWeatherMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IVWeatherMap.m; path = ../IVWeatherMap.m; sourceTree = "<group>"; };
+		7935482AB8F22AACDBACDE96 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EF2B8972AEAD26A8CC72A8AC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BBF04ADCAE990B37DF1DC8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +61,8 @@
 			children = (
 				2962CDAE1BB7001B0087D0D9 /* NSURLSessionTest */,
 				2962CDAD1BB7001B0087D0D9 /* Products */,
+				57F3321B0B3B9F1F91E7DD76 /* Pods */,
+				D82E8107C92C8EDCAE615823 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,8 +106,29 @@
 				29D8A0D31BB7FDE10037A6D9 /* IVWeatherMap.m */,
 				2962CDC61BB718AC0087D0D9 /* IVModel.h */,
 				2962CDC71BB718AC0087D0D9 /* IVModel.m */,
+				2911DD861BB921B2009F502B /* IVPostSender.h */,
+				2911DD871BB921B2009F502B /* IVPostSender.m */,
+				293885181BB935290062BF86 /* IVUser.h */,
+				293885191BB935290062BF86 /* IVUser.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		57F3321B0B3B9F1F91E7DD76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7935482AB8F22AACDBACDE96 /* Pods.debug.xcconfig */,
+				EF2B8972AEAD26A8CC72A8AC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D82E8107C92C8EDCAE615823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28DA2D803D3CBB55804CC8B2 /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2962CDC31BB7001B0087D0D9 /* Build configuration list for PBXNativeTarget "NSURLSessionTest" */;
 			buildPhases = (
+				33232B1D831DDC6405F187CB /* Check Pods Manifest.lock */,
 				2962CDA81BB7001B0087D0D9 /* Sources */,
 				2962CDA91BB7001B0087D0D9 /* Frameworks */,
 				2962CDAA1BB7001B0087D0D9 /* Resources */,
+				EAC36F1B36811360FC449A3A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +199,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33232B1D831DDC6405F187CB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC36F1B36811360FC449A3A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2962CDA81BB7001B0087D0D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -171,7 +240,9 @@
 				29D8A0D41BB7FDE10037A6D9 /* IVWeatherMap.m in Sources */,
 				2962CDC81BB718AC0087D0D9 /* IVModel.m in Sources */,
 				2962CDB71BB7001B0087D0D9 /* ViewController.m in Sources */,
+				2911DD881BB921B2009F502B /* IVPostSender.m in Sources */,
 				2962CDB41BB7001B0087D0D9 /* AppDelegate.m in Sources */,
+				2938851A1BB935290062BF86 /* IVUser.m in Sources */,
 				2962CDB11BB7001B0087D0D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +351,7 @@
 		};
 		2962CDC41BB7001B0087D0D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7935482AB8F22AACDBACDE96 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -295,6 +367,7 @@
 		};
 		2962CDC51BB7001B0087D0D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF2B8972AEAD26A8CC72A8AC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

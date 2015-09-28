@@ -61,10 +61,4 @@ static NSString const *kWeatherString = @"http://api.openweathermap.org/data/2.5
                                                         object: nil];
 }
 
-- (void) updateWeather {
-    
-    [_delegate updateWeather];
-    
-}
-
 @end

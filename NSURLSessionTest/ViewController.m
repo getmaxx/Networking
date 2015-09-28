@@ -19,14 +19,13 @@
 
 static NSString* const kImageURL = @"http://cs623329.vk.me/v623329702/49ffe/E5k-ABxNcm0.jpg";
 
-
 @implementation ViewController
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
-    _progress.hidden = YES; // vapdlu konstreinty perenastraivat
+    _progress.hidden = YES; // vpadlu konstreinty perenastraivat
     _weatherLabel.text = @"";
     
     [[NSNotificationCenter defaultCenter] addObserver: self

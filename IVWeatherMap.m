@@ -7,11 +7,11 @@
 //
 
 #import "IVWeatherMap.h"
-//#import "AFNetworking"
+#import "AFNetworking.h"
 
 @interface IVWeatherMap ()
 
-//@property (strong, nonatomic) AFHTTPRequestOperationManager* requestOperationManager;
+@property (strong, nonatomic) AFHTTPRequestOperationManager* requestOperationManager;
 
 @end
 
@@ -29,7 +29,7 @@
     return map;
 }
 
-/*- (id)init
+- (id)init
 {
     self = [super init];
     if (self) {
@@ -39,7 +39,7 @@
         self.requestOperationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:url];
     }
     return self;
-}*/
+}
 
 
 @end
