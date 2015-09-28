@@ -10,10 +10,14 @@
 
 @class IVUser;
 
+typedef void(^IVAuthorizeBlock)(IVUser *user);
+
 @interface IVPostSender : NSObject
+
+@property (strong, nonatomic, readonly) IVUser *currentUser;
 
 + (IVPostSender*) sharedSender;
 
-- (void) authorizeUser: (void(^)(IVUser *user)) completion;
+- (void) authorizeUser: (IVAuthorizeBlock) completion;
 
 @end

@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 #import "IVModel.h"
+#import "IVAccessToken.h"
+#import "IVVKLoginViewController.h"
+#import "IVUser.h"
+#import "IVPostSender.h"
 
 @interface ViewController () {
     
@@ -33,9 +37,12 @@ static NSString* const kImageURL = @"http://cs623329.vk.me/v623329702/49ffe/E5k-
                                                  name: @"com.igorv.workdone"
                                                object: nil];
     
-    [self weather];
-    [self picture];
-    
+        [self weather];
+        [self picture];
+        
+        [[IVPostSender sharedSender] authorizeUser:^(IVUser *user) {
+            NSLog(@"ez katka");
+        }];
 }
 
 - (void) picture {
@@ -93,8 +100,12 @@ static NSString* const kImageURL = @"http://cs623329.vk.me/v623329702/49ffe/E5k-
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    
+    NSLog(@"DEALLOC MAIN VC");
     //[super dealloc];
+}
+
+- (NSString*) description {
+    return @"MAIN VC";
 }
 
 @end
